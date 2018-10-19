@@ -8,8 +8,19 @@
 
 import UIKit
 
+enum GameType : String{
+    case megasena = "Mega-Sena"
+    case quina = "Quina"
+}
+
+
+
+
 class ViewController: UIViewController {
 
+    @IBOutlet var balls: [UIButton]!
+    @IBOutlet weak var scGameType: UISegmentedControl!
+    @IBOutlet weak var lbgameType: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +32,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func generatedGame() {
+    }
 }
 
